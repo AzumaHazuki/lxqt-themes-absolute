@@ -1,0 +1,71 @@
+/* The main Leave dialog window */
+QDialog {
+	color:				#1a1a1a;
+	background:			#e1e1e1;
+
+	border:				1px solid #a4a4a4;
+}
+
+/* Caption colors */
+QLabel {
+	color:				#1a1a1a;
+	background:			transparent;
+
+	padding:			8px;
+}
+
+/* Available actions - only partially themeable as of LXQt 1.2.x */
+QAbstractItemView {
+	color:				#1a1a1a;
+	background:			#ffffff; /* This doesn't work for some reason... */
+	background-image:		url(assets/menus/bg.png); /* ...but this does! */
+
+	border:				1px solid #a4a4a4;
+}
+
+/* Button settings */
+QPushButton {
+        color:                          #1a1a1a;
+        background:                     qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ededed, stop:1 #eaeaea);
+
+	border:				4px solid transparent;
+        border-image:                   url(assets/buttons/button.png) 4;
+
+        padding-left:                   24px;
+        padding-right:                  24px;
+        padding-top:                    4px;
+        padding-bottom:			4px;
+
+	margin-left:			10px;
+	margin-right:			10px;
+}
+
+QToolButton {
+        color:                          #1a1a1a;
+        background:                     qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ededed, stop:1 #eaeaea);
+
+	border:				4px solid transparent;
+        border-image:                   url(assets/buttons/button.png) 4;
+
+        padding-left:                   6px;
+        padding-right:                  6px;
+        padding-top:                    4px;
+        padding-bottom:			4px;
+
+	margin-left:			10px;
+	margin-right:			10px;
+}
+
+QPushButton:hover, QToolButton:hover {
+        color:                          #1a1a1a;
+        background:                     qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #e6e6e6, stop:1 #e3e3e3);
+
+        border-image:                   url(assets/buttons/hover.png) 4;
+}
+
+QPushButton:pressed, QToolButton:pressed {
+        color:                          #1a1a1a;
+        background:                     qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #d5d5d5, stop:1 #d4d4d4);
+
+        border-image:                   url(assets/buttons/active.png) 4;
+}
